@@ -1,2 +1,2 @@
 # BUNN-BC
-BUNN w3b Bootcamp classes
+BUNN w3b Bootcamp classes.
