@@ -1,0 +1,400 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x708A2C7d171a6f51dE1C34271c2336eA4c8b1717",
+      "txHash": "0x8981569b8093b420541cf1f649a91ca48ae3d02a82214c1b169d25fe26a27315",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0Ae896814f4F8BfB7fa14dBdAdfDC415b758E6E6",
+      "txHash": "0x1ec7b9d943ac649bb915894c2f4ec8c4cdafa07fe634b6e3278429c2ced4b935",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "038530227aa58e5318bbc74f110c9293f9948a6175b5f88082a425d9d10d325a": {
+      "address": "0xC8142E198d3795EF0c0e50583b18f7A1ADc10377",
+      "txHash": "0xfccb4c36897429ad3a575c6e6b5bdcc39c469a2dffa023269a452131b73e571a",
+      "layout": {
+        "solcVersion": "0.8.23",
+        "storage": [
+          {
+            "label": "counter",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "voting_SMC",
+            "src": "contracts/vote.sol:12"
+          },
+          {
+            "label": "_Candidates",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_uint256,t_struct(Candidate)265_storage)",
+            "contract": "voting_SMC",
+            "src": "contracts/vote.sol:13"
+          },
+          {
+            "label": "Candidates",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_array(t_struct(Candidate)265_storage)dyn_storage",
+            "contract": "voting_SMC",
+            "src": "contracts/vote.sol:14"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)7_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Candidate)265_storage)dyn_storage": {
+            "label": "struct voting_SMC.Candidate[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Candidate)265_storage)": {
+            "label": "mapping(uint256 => struct voting_SMC.Candidate)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Candidate)265_storage": {
+            "label": "struct voting_SMC.Candidate",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adrs",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "totalVotes",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "f570b8f044cd7763fd36716e8dabbf2b5ed0c5578cb7c894955a9465643a0e1c": {
+      "address": "0x95aFFfb6E6b294785bE2B0055028aF44E053F3e0",
+      "txHash": "0x4adc8cd48d6fe447dc7bdfe0c8be0d57fdd7845d8f4d7dfcce99357e3d5aa85c",
+      "layout": {
+        "solcVersion": "0.8.23",
+        "storage": [
+          {
+            "label": "counter",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "voting_SMC",
+            "src": "contracts/vote.sol:12"
+          },
+          {
+            "label": "_Candidates",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_uint256,t_struct(Candidate)265_storage)",
+            "contract": "voting_SMC",
+            "src": "contracts/vote.sol:13"
+          },
+          {
+            "label": "Candidates",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_array(t_struct(Candidate)265_storage)dyn_storage",
+            "contract": "voting_SMC",
+            "src": "contracts/vote.sol:14"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)7_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Candidate)265_storage)dyn_storage": {
+            "label": "struct voting_SMC.Candidate[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Candidate)265_storage)": {
+            "label": "mapping(uint256 => struct voting_SMC.Candidate)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Candidate)265_storage": {
+            "label": "struct voting_SMC.Candidate",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adrs",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "totalVotes",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "0c47221c531998979a888f1e7eb886fc0d5f6e5058b209fb5d6c69fd5a7b6402": {
+      "address": "0xAF8ede695c3CD7cBBD1B802A763585330Df520B8",
+      "txHash": "0xbfe5348ecc1ec17ddbfc7e8d6daf16ef6424d37868dc275880f208e5b7db9190",
+      "layout": {
+        "solcVersion": "0.8.23",
+        "storage": [
+          {
+            "label": "counter",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "voting_SMC",
+            "src": "contracts/vote.sol:12"
+          },
+          {
+            "label": "_Candidates",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_uint256,t_struct(Candidate)265_storage)",
+            "contract": "voting_SMC",
+            "src": "contracts/vote.sol:13"
+          },
+          {
+            "label": "Candidates",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_array(t_struct(Candidate)265_storage)dyn_storage",
+            "contract": "voting_SMC",
+            "src": "contracts/vote.sol:14"
+          },
+          {
+            "label": "admin",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_address",
+            "contract": "voting_SMC",
+            "src": "contracts/vote.sol:15"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)7_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Candidate)265_storage)dyn_storage": {
+            "label": "struct voting_SMC.Candidate[]",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Candidate)265_storage)": {
+            "label": "mapping(uint256 => struct voting_SMC.Candidate)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Candidate)265_storage": {
+            "label": "struct voting_SMC.Candidate",
+            "members": [
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adrs",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "totalVotes",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
